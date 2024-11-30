@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your perfect bra size with our easy-to-use Bra Size Calculator. Get personalized recommendations based on your body type, activity, and attire preferences.">
+    <meta name="keywords" content="bra size calculator, find your bra size, bra size recommendations, body type, comfort, attire, activity">
+    <meta name="author" content="TopKinky Picks">
+    <title>Bra Size Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Blue Heading -->
+        <h1 class="heading">Bra Size Calculator</h1>
+        
+        <!-- Form -->
+        <form id="braForm">
+            <div class="form-group">
+                <label for="underbust">Underbust Measurement (inches):</label>
+                <input type="number" id="underbust" required>
+            </div>
+            <div class="form-group">
+                <label for="bust">Bust Measurement (inches):</label>
+                <input type="number" id="bust" required>
+            </div>
+            <div class="form-group">
+                <label for="bodyType">Body Type:</label>
+                <select id="bodyType" required>
+                    <option value="bigBust">Big Bust</option>
+                    <option value="smallBust">Small Bust</option>
+                    <option value="asymmetricalBust">Asymmetrical Bust</option>
+                    <option value="flatChest">Flat Chest</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="activity">Activity:</label>
+                <select id="activity" required>
+                    <option value="workout">Workout</option>
+                    <option value="officeWear">Office Wear</option>
+                    <option value="party">Party</option>
+                    <option value="dailyWear">Daily Wear</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comfort">Comfort Sensitivity:</label>
+                <select id="comfort" required>
+                    <option value="sensitiveSkin">Sensitive Skin</option>
+                    <option value="diggingStraps">Straps Digging In</option>
+                    <option value="chafing">Chafing</option>
+                    <option value="regular">Regular Comfort</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="attireType">Attire Type:</label>
+                <select id="attireType" required>
+                    <option value="tshirt">T-Shirt</option>
+                    <option value="cropTop">Crop Top</option>
+                    <option value="corset">Corset</option>
+                    <option value="sundress">Sundress</option>
+                    <option value="saree">Saree</option>
+                    <option value="salwar">Salwar</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Get My Bra Size</button>
+        </form>
+
+        <!-- Result Section -->
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

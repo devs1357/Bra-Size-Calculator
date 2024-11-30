@@ -1,0 +1,102 @@
+/* General Body and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container to center the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling the calculator box */
+.calculator-box {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Blue Heading Style */
+h2 {
+    text-align: center;
+    color: #3498db; /* Blue color */
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eaf5ff; /* Light blue background */
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Form Inputs */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Result Section Styling */
+#result {
+    margin-top: 20px;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .calculator-box {
+        padding: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    input, select, button {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
